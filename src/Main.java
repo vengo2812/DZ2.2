@@ -3,17 +3,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        int x = 500; // Было на счете клиента
-        int y = 1000; // сумма пополнения
+        int wasOnTheAccount = 500; // Было на счете
+        int replenishmentAmount = 1000; // сумма пополнения
         int bonus;
-        if (y > 1000) {
-            bonus = y / 100;
+        if (replenishmentAmount > 1000) {
+            bonus = replenishmentAmount / 100;
         } else {
             bonus = 0;
         }
-        int z = x + y + bonus; // итоговая сумма
+        int total = wasOnTheAccount + replenishmentAmount + bonus; // итог
 
-        System.out.println("Итоговая сумма:" + (z));
+        System.out.println("Итоговая сумма:" + (total));
         System.out.println("Бонусы:" + (bonus));
     }
 }
